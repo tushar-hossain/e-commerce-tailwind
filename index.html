@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- tailwind cdn -->
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <!-- daisyUI cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font awesome cdn -->
+    <script
+      src="https://kit.fontawesome.com/1e86394c92.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- custom cdn -->
+    <style type="text/tailwindcss">
+      @theme {
+        --color-clifford: #da373d;
+        --font-merriweather: Merriweather, serif;
+      }
+      .header {
+        @apply w-11/12 mx-auto p-1 lg:px-6 py-4;
+      }
+      .sub-heading {
+        @apply text-xl font-semibold lg:text-2xl;
+      }
+    </style>
+  </head>
+  <body class="font-merriweather">
+    <!-- header section -->
+    <header
+      class="h-[90vh] z-0 bg-no-repeat bg-center bg-cover bg-[url('./images/home-new-bg-free-img.jpg')] bg-fixed relative mb-10"
+    >
+      <div
+        class="absolute h-full w-full -z-[1] bg-gradient-to-t from-white via-[#00000085] to-white"
+      ></div>
+      <div class="header z-10">
+        <!-- navbar start -->
+        <div class="navbar text-white">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content bg-black rounded-box z-[1] mt-3 w-52 p-2 shadow"
+              >
+                <li><a>Home</a></li>
+                <li><a>All Categories</a></li>
+                <li><a>New Arrivals</a></li>
+                <li><a>New Arrivals</a></li>
+                <li><a>Featured Products</a></li>
+                <li><a>Fashions</a></li>
+                <li><a>Appliances</a></li>
+                <li><a>Log out</a></li>
+              </ul>
+            </div>
+            <a class="text-xl lg:text-2xl font-bold cursor-pointer">MRL SHOP</a>
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+              <li><a>Home</a></li>
+              <li><a>All Categories</a></li>
+              <li><a>New Arrivals</a></li>
+              <li><a>New Arrivals</a></li>
+              <li><a>Featured Products</a></li>
+              <li><a>Fashions</a></li>
+              <li><a>Appliances</a></li>
+            </ul>
+          </div>
+          <div class="navbar-end gap-1 lg:gap-5">
+            <a
+              class="bg-orange-300 p-2 text-xs lg:text-xl lg:px-6 lg:py-3 rounded-lg text-white cursor-pointer"
+              >Login</a
+            >
+            <a class="text-xl hover:text-orange-300" href="#"
+              ><i class="fa-solid fa-cart-shopping"></i
+            ></a>
+          </div>
+        </div>
+        <!-- navbar end -->
+
+        <div class="absolute top-2/5">
+          <div class="space-y-4 lg:space-y-10 text-white">
+            <h1 class="text-xl md:text-3xl lg:text-5xl font-bold">
+              Raining Offers For <br />
+              Hot Summer!
+            </h1>
+            <h3 class="sub-heading">25% Off On All Products</h3>
+            <div>
+              <button class="btn btn-outline bg-black text-white">
+                SHOP NOW
+              </button>
+              <button
+                class="btn btn-outline text-white hover:bg-white hover:text-black"
+              >
+                FIND MORE
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- main section -->
+    <main>
+      <!-- brand section -->
+      <section class="header mb-10">
+        <div
+          class="lg:py-5 grid gap-6 grid-cols-2 md:grid-cols-3 lg:grid-cols-4"
+        >
+          <div>
+            <img src="./images/client-logo-1.png" alt="" />
+          </div>
+          <div>
+            <img src="./images/client-logo-2.png" alt="" />
+          </div>
+          <div>
+            <img src="./images/client-logo-3.png" alt="" />
+          </div>
+          <div>
+            <img src="./images/client-logo-4.png" alt="" />
+          </div>
+        </div>
+      </section>
+      <!-- card items -->
+      <section class="header mb-10">
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 relative"
+        >
+          <!-- card-1 -->
+          <div class="relative">
+            <div>
+              <div>
+                <img src="./images/women-fashion-free-img.jpg" alt="" />
+              </div>
+            </div>
+            <div class="absolute top-[30%] md:top-[40%] space-y-5 p-2 lg:p-4">
+              <h1 class="sub-heading">20% Off On Tank Tops</h1>
+              <p class="text-gray-50">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
+                ac dictum.
+              </p>
+              <button class="btn btn-outline bg-black text-white">
+                SHOP NOW
+              </button>
+            </div>
+          </div>
+          <!-- card-2 -->
+          <div class="relative">
+            <div>
+              <div>
+                <img src="./images/men-fashion-free-img.jpg" alt="" />
+              </div>
+            </div>
+            <div class="absolute top-[30%] md:top-[40%] space-y-5 p-2 lg:p-4">
+              <h1 class="sub-heading">Latest Eyewear For You</h1>
+              <p class="text-gray-50">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
+                ac dictum.
+              </p>
+              <button class="btn btn-outline bg-black text-white">
+                SHOP NOW
+              </button>
+            </div>
+          </div>
+
+          <!-- card-3 -->
+          <div class="relative">
+            <div>
+              <div>
+                <img src="./images/footwear-free-img.jpg" alt="" />
+              </div>
+            </div>
+            <div class="absolute top-[30%] md:top-[40%] space-y-5 p-2 lg:p-4">
+              <h1 class="sub-heading">Let's Lorem Suit Up!</h1>
+              <p class="text-gray-50">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
+                ac dictum.
+              </p>
+              <button class="btn btn-outline bg-black text-white">
+                SHOP NOW
+              </button>
+            </div>
+          </div>
+
+          <!--  -->
+        </div>
+      </section>
+
+      <!-- Products section -->
+      <section class="header mb-10">
+        <div
+          class="grid gap-4 sm:grid-cols-2 lg:gap-6 grid-cols-1 md:grid-cols-3 lg:grid-cols-5 text-center lg:text-left"
+        >
+          <!-- card-1 -->
+          <div>
+            <div class="flex items-center justify-center">
+              <img src="./images/sports-shoe3-300x300.jpg" alt="" />
+            </div>
+            <div class="space-y-2">
+              <h2 class="text-xl lg:text-2xl mt-4">DNK Yellow Shoes</h2>
+              <p class="text-[#b6b8b9]">Men</p>
+              <p>$120.00</p>
+              <div class="text-orange-300">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+            </div>
+          </div>
+
+          <!-- card-2 -->
+          <div>
+            <div class="flex items-center justify-center">
+              <img src="./images/sports-shoe1-300x300.jpg" alt="" />
+            </div>
+            <div class="space-y-2">
+              <h2 class="text-xl lg:text-2xl mt-4">DNK Blue Shoes</h2>
+              <p class="text-[#b6b8b9]">Men</p>
+              <p>$200.00</p>
+              <div class="text-orange-300">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+            </div>
+          </div>
+
+          <!-- card-3 -->
+          <div>
+            <div class="flex items-center justify-center">
+              <img src="./images/product-m-jeans1-300x300.jpg" alt="" />
+            </div>
+            <div class="space-y-2">
+              <h2 class="text-xl lg:text-2xl mt-4">Dark Brown Jeans</h2>
+              <p class="text-[#b6b8b9]">Men</p>
+              <p>$150.00</p>
+              <div class="text-orange-300">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <!-- card-4 -->
+          <div>
+            <div class="flex items-center justify-center">
+              <img src="./images/product-w-jeans2-300x300.jpg" alt="" />
+            </div>
+            <div class="space-y-2">
+              <h2 class="text-xl lg:text-2xl mt-4">Blue Denim Jeans</h2>
+              <p class="text-[#b6b8b9]">Women</p>
+              <p>$120.00</p>
+              <div class="text-orange-300">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+            </div>
+          </div>
+
+          <!-- card-5 -->
+          <div>
+            <div class="flex items-center justify-center">
+              <img src="./images/product-w-jeans4-300x300.jpg" alt="" />
+            </div>
+            <div class="space-y-2">
+              <h2 class="text-xl lg:text-2xl mt-4">Basic Gray Jeans</h2>
+              <p class="text-[#b6b8b9]">Women</p>
+              <p>$120.00</p>
+              <div class="text-orange-300">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <!--  -->
+
+          <!-- card-6 -->
+          <div>
+            <div class="flex items-center justify-center">
+              <img src="./images/product-w-jeans1-300x300.jpg" alt="" />
+            </div>
+            <div class="space-y-2">
+              <h2 class="text-xl lg:text-2xl mt-4">Blue Denim Shorts</h2>
+              <p class="text-[#b6b8b9]">Women</p>
+              <p>$130.00</p>
+              <div class="text-orange-300">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+            </div>
+          </div>
+
+          <!-- card-7 -->
+          <div>
+            <div class="flex items-center justify-center">
+              <img src="./images/product-accessory2.jpg" alt="" />
+            </div>
+            <div class="space-y-2">
+              <h2 class="text-xl lg:text-2xl mt-4">Anchor Bracelet</h2>
+              <p class="text-[#b6b8b9]">Accessories</p>
+              <p>$150.00</p>
+              <div class="text-orange-300">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+            </div>
+          </div>
+
+          <!-- card-8 -->
+          <div>
+            <div class="flex items-center justify-center">
+              <img src="./images/product-accessory1-600x600.jpg" alt="" />
+            </div>
+            <div class="space-y-2">
+              <h2 class="text-xl lg:text-2xl mt-4">Boho Bangle Bracelet</h2>
+              <p class="text-[#b6b8b9]">Accessories</p>
+              <p>$170.00</p>
+              <div class="text-orange-300">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <!-- card-9 -->
+          <div>
+            <div class="flex items-center justify-center">
+              <img src="./images/product-bag1-300x300.jpg" alt="" />
+            </div>
+            <div class="space-y-2">
+              <h2 class="text-xl lg:text-2xl mt-4">Light Brown Purse</h2>
+              <p class="text-[#b6b8b9]">Light Brown Purse</p>
+              <p>$150.00</p>
+              <div class="text-orange-300">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+            </div>
+          </div>
+
+          <!-- card-10 -->
+          <div>
+            <div class="flex items-center justify-center">
+              <img src="./images/product-bag3-300x300.jpg" alt="" />
+            </div>
+            <div class="space-y-2">
+              <h2 class="text-xl lg:text-2xl mt-4">Bright Red Bag</h2>
+              <p class="text-[#b6b8b9]">Accessories</p>
+              <p>$100.00</p>
+              <div class="text-orange-300">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+            </div>
+          </div>
+
+          <!--  -->
+        </div>
+      </section>
+    </main>
+
+    <!-- footer section -->
+    <footer></footer>
+  </body>
+</html>
